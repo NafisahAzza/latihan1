@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Starter Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        body {background-color: rgb(151, 213, 231)}
+        div {  padding-top: 10px;
+               padding-right: 20px;
+               padding-bottom: 30px;
+               padding-left: 20px;}
+        ul.b {
+             list-style-type: square;}
+             span.a {
+            display: inline; /* the default for span */
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid black;  
+            background-color: white; 
+            }
+        #mydoc {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1 style="color: rgb(0, 86, 247)">MARK LEE</h1>
+        <p style="color: rgb(4, 14, 158)">Mahasiswa Sistem Informasi ITS 2018</p> 
+      </div>
+
+      <div class="container" style="margin-top:30px">
+        <div class="row">
+            <div class="col-sm-4">
+              <h3 style="color:rgb(0, 86, 247)"><span class="a">PROFILE</span></h3>
+              <div class=""><img src="img/mark.jpg" width="200px" title="Mark Lee"></div>
+              <p>Saya Mark Lee. <br> Saat ini, saya sedang menempuh pendidikan S1 di Departemen Sistem Informasi ITS. 
+                Hobi saya adalah membaca buku dan mendengarkan musik. 
+                Salah satu kalimat motivasi yang saya sukai yaitu “Dream as if you will live forever and live as if you will die today”.</p>
+              <h3 style="color: rgb(0, 86, 247)"><span class="a">CONTACT</span></h3>
+              <ul class="b">
+                <li> <b>Alamat</b> : Jln. Keputih no. 100</li>
+                <li><b>Email</b> : mark_lee@yahoo.com </li>
+                <li><b>No. HP</b> : 081234567890</li>
+                <li><b>Line</b> : marklee99</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-8">
+                <h2 style="color: rgb(0, 86, 247)"><span class="a" >EDUCATION</span></h2>
+                <ul class="b">
+                <li> <b>2006</b> SDN Pare 2  </li>
+                <li><b>2012</b> SMPN 2 Pare </li>
+                <li><b>2015</b> SMAN 2 Pare </li>
+                <li><b>2018</b> Institut Teknologi Sepuluh Nopember</li>
+                </ul>
+
+                <h2 style="color: rgb(0, 86, 247)"><span class="a">EXPERIENCE</span></h2>
+                <ul class="b">
+                    <li><b>Certified</b> by Oracle </li>
+                    <li><b>Certified</b> by SAP </li>
+                    <li><b>Member</b> of HMSI </li>    
+                    </ul>           
+            
+                <h2 style="color: rgb(0, 86, 247)"><span class="a">PORTFOLIO</span></h2>
+                <p>Berikut ini adalah portfolio yang telah saya buat.</p>
+                <button onclick="myFunction()">Klik</button>
+                <div id="mydoc">
+                <img src="img/gambar.png" width="600px" title="portfolio">
+                </div>
+                <script>
+                    function myFunction() {
+                    var x = document.getElementById("mydoc");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+                </script>
+            </div>
+        </div> 
+         
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+
+</html>
